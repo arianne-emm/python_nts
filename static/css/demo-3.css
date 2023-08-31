@@ -59,6 +59,12 @@ body {
     margin-right: 10px;
     color: #FFFFFF;
 }
+.message-alert {
+    background-color: #D0342C;
+    margin-left: 10px;
+    color: #FFFFFF;
+
+}
 
 .date{
     color: #A4A4A4;
