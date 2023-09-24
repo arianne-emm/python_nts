@@ -36,9 +36,25 @@ http://127.0.0.1:5000
 7. To view the website on your mobile device, open a separate Terminal window on your machine
 and run command `ngrok http 5000`. This allows you to open a HTTP tunnel that's pointing to your local server running on port 5000.
 
-![Screen Shot 2023-09-24 at 4.22.08 PM.png](..%2FDesktop%2FScreen%20Shot%202023-09-24%20at%204.22.08%20PM.png)
+```commandline
+ngrok                                                                                                                (Ctrl+C to quit)
+                                                                                                                                     
+Introducing Always-On Global Server Load Balancer: https://ngrok.com/r/gslb                                                          
+                                                                                                                                     
+Session Status                online                                                                                                 
+Account                       Jane Doe (Plan: Free)                                                                          
+Version                       3.3.4                                                                                                  
+Region                        United States (us)                                                                                     
+Latency                       -                                                                                                      
+Web Interface                 http://127.0.0.1:4040                                                                                  
+Forwarding                    https://d757-74-193-65-45.ngrok-free.app -> http://localhost:5000                                      
+                                                                                                                                     
+Connections                   ttl     opn     rt1     rt5     p50     p90                                                            
+                              0       0       0.00    0.00    0.00    0.00  
+```
 
-On your mobile device, visit the URL underlined in red to view the website.
+On your mobile device, visit the Forwarding URL to view the website.
+Ex: `https://d757-74-193-65-45.ngrok-free.app`
 
 ## Notes
 
