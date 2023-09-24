@@ -6,10 +6,6 @@ const lastMessage = document.getElementById('last-message');
 
 const words = ["kill", "suicide", "die", "help", "depression"];
 
-function greeting(){
-  console.log("Hello World");
-}
-
 document.querySelector('#send-msg').addEventListener('click', (e) => {
   e.preventDefault();
   var message_text = messageText.value;
@@ -31,7 +27,7 @@ document.querySelector('#send-msg').addEventListener('click', (e) => {
   }
 
   if (check_words == true) {
-      alert_message = "Help is available. Speak with someone today. We have dialed Suicide Prevention Hotline (998) to connect you to someone."
+      alert_message = "Help is available. Speak with someone today. We have dialed Suicide Prevention Hotline (988) to connect you to someone."
       var notifyBubble = document.createElement('div');
       notifyBubble.innerHTML = '<div class="row justify-content-start"> <div class="message message-alert">'+alert_message+'</div> </div>'
       setTimeout(()=> {
@@ -47,12 +43,3 @@ document.querySelector('#send-msg').addEventListener('click', (e) => {
   }
 
 });
-
-// Functions
-//function handleFormSubmit(e) {
-//    e.preventDefault();
-//    console.log(e);
-//}
-//
-//// Event Listeners
-//btn.addEventListener("click", handleFormSubmit());
