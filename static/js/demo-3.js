@@ -6,6 +6,10 @@ const lastMessage = document.getElementById('last-message');
 
 const words = ["kill", "suicide", "die", "help", "depression"];
 
+function greeting(){
+  console.log("Hello World");
+}
+
 document.querySelector('#send-msg').addEventListener('click', (e) => {
   e.preventDefault();
   var message_text = messageText.value;
@@ -30,9 +34,16 @@ document.querySelector('#send-msg').addEventListener('click', (e) => {
       alert_message = "Help is available. Speak with someone today. We have dialed Suicide Prevention Hotline (998) to connect you to someone."
       var notifyBubble = document.createElement('div');
       notifyBubble.innerHTML = '<div class="row justify-content-start"> <div class="message message-alert">'+alert_message+'</div> </div>'
-      lastMessage.parentNode.appendChild(notifyBubble, lastMessage.nextSibling);
       setTimeout(()=> {
-         lastMessage.parentNode.appendChild(notifyBubble, lastMessage.nextSibling);},5000);
+         lastMessage.parentNode.appendChild(notifyBubble, lastMessage.nextSibling);},2500);
+
+        let count = 1;
+        setInterval(()=>{
+            count++
+            console.log(count);
+            if (count > 6) location.replace('/call')
+
+        },1000)
   }
 
 });
